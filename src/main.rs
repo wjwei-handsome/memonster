@@ -80,9 +80,9 @@ fn main() {
         Ok(memory_size) => {
             println!("Nom nom nom.... {} Bytes", memory_size);
             if !dryrun {
-                // let _memory = occupy_memory(memory_size);
+                let _memory = occupy_memory(memory_size);
                 // sleep 30s for monitoring
-                // thread::sleep(Duration::from_secs(30));
+                thread::sleep(Duration::from_secs(30));
             }
         }
         Err(e) => eprintln!("DAMN: {}", e),
