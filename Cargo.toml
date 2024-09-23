@@ -1,0 +1,9 @@
+[package]
+name = "memonster"
+version = "0.1.0"
+edition = "2021"
+authors = ["Wenjie Wei <weiwenjie@westlake.edu.cn>"]
+
+[dependencies]
+clap = { version = "4.5.18", features = ["derive"] }
+regex = "1.10.6"
